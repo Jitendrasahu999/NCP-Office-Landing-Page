@@ -1,0 +1,1225 @@
+
+/*** Spinner Start ***/
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .8s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+ }
+
+ #spinner.show {
+     transition: opacity .8s ease-out, visibility 0s linear .0s;
+     visibility: visible;
+     opacity: 1;
+ }
+
+ .back-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: flex;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    z-index: 99;
+}
+/*** Spinner End ***/
+
+
+/*** Button Start ***/
+.btn {
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-sm-square {
+    width: 34px;
+    height: 34px;
+}
+
+.btn-md-square {
+    width: 44px;
+    height: 44px;
+}
+
+.btn-lg-square {
+    width: 56px;
+    height: 56px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-md-square,
+.btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+
+.btn.border-secondary {
+    transition: 0.5s;
+}
+
+.btn.border-secondary:hover {
+    background: var(--bs-secondary) !important;
+    color: var(--bs-white) !important;
+}
+
+/*** Topbar Start ***/
+.fixed-top {
+    transition: 0.5s;
+    background: var(--bs-white);
+    border: 0;
+}
+
+.topbar {
+    padding: 20px;
+    border-radius: 230px 100px;
+}
+
+.topbar .top-info {
+    font-size: 15px;
+    line-height: 0;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+
+.topbar .top-link {
+    font-size: 15px;
+    line-height: 0;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+
+.topbar .top-link a {
+    letter-spacing: 1px;
+}
+
+.topbar .top-link a small:hover {
+    color: var(--bs-secondary) !important;
+    transition: 0.5s;
+}
+
+.topbar .top-link a small:hover i {
+    color: var(--bs-primary) !important;
+}
+/*** Topbar End ***/
+
+/* ** Navbar Start
+.navbar .navbar-nav .nav-link {
+    padding: 10px 15px;
+    font-size: 16px;
+    transition: .5s;
+}
+
+.navbar {
+    height: 70px;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active,
+.fixed-top.bg-white .navbar .navbar-nav .nav-link:hover,
+.fixed-top.bg-white .navbar .navbar-nav .nav-link.active {
+    color: var(--bs-primary);
+}
+
+.navbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+@media (min-width: 1200px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        visibility: hidden;
+        top: 100%;
+        transform: rotateX(-75deg);
+        transform-origin: 0% 0%;
+        border: 0;
+        transition: .5s;
+        opacity: 0;
+    }
+}
+
+.dropdown .dropdown-menu a:hover {
+    background: var(--bs-secondary);
+    color: var(--bs-primary);
+}
+
+.navbar .nav-item:hover .dropdown-menu {
+    transform: rotateX(0deg);
+    visibility: visible;
+    background: var(--bs-light) !important;
+    border-radius: 10px !important;
+    transition: .5s;
+    opacity: 1;
+}
+
+#searchModal .modal-content {
+    background: rgba(255, 255, 255, .8);
+}
+Navbar End ** */
+
+/*** Hero Header ***/
+/*** Hero Header ***/
+.hero-header {
+    background: linear-gradient(rgba(248, 223, 173, 0.1), rgba(248, 223, 173, 0.1)), url(../img/backgroundimage/bg_nascorp1920_800.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* 2XL Screens (≥1400px) */
+@media (min-width: 1400px) {
+    .hero-header {
+        background-image: linear-gradient(rgba(248, 223, 173, 0.1), rgba(248, 223, 173, 0.1)), url(../img/backgroundimage/bg_nascorp1920_800.png);
+    }
+}
+
+/* XL Screens (1200px – 1399.98px) */
+@media (max-width: 1399.98px) {
+    .hero-header {
+        background-image: linear-gradient(rgba(248, 223, 173, 0.1), rgba(248, 223, 173, 0.1)), url(../img/backgroundimage/bg_nascorp1600_600.png);
+    }
+}
+
+/* LG Screens (992px – 1199.98px) */
+@media (max-width: 1199.98px) {
+    .hero-header {
+        background-image: linear-gradient(rgba(248, 223, 173, 0.1), rgba(248, 223, 173, 0.1)), url(../img/backgroundimage/bg_nascorp1200_500.png);
+    }
+}
+
+/* MD Screens (768px – 991.98px) */
+@media (max-width: 991.98px) {
+    .hero-header {
+        background-image: linear-gradient(rgba(248, 223, 173, 0.1), rgba(248, 223, 173, 0.1)), url(../img/backgroundimage/bg_nascorp992_450.png);
+    }
+}
+
+/* SM Screens (576px – 767.98px) */
+@media (max-width: 767.98px) {
+    .hero-header {
+        background-image: linear-gradient(rgba(248, 223, 173, 0.1), rgba(248, 223, 173, 0.1)), url(../img/backgroundimage/bg_nascorp768_400.png);
+    }
+}
+
+/* XS Screens (<576px) */
+@media (max-width: 575.98px) {
+    .hero-header {
+        background-image: linear-gradient(rgba(248, 223, 173, 0.1), rgba(248, 223, 173, 0.1)), url(../img/backgroundimage/bg_nascorp576_300.png);
+    }
+}
+
+
+.hero-header1 {
+    background: linear-gradient(rgba(248, 223, 173, 0.1), rgba(248, 223, 173, 0.1)), url(../img/backgroundimage/nascorp-school-management-software-and-mobile-app.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media (max-width: 767.98px) {
+    .hero-header1 {
+        background: #204A7A !important;
+    }
+}
+
+.hero-header2 {
+    background: linear-gradient(rgba(248, 223, 173, 0.1), rgba(248, 223, 173, 0.1)), url(../img/backgroundimage/6.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-item a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    background: linear-gradient(rgba(255, 181, 36, 0.7), rgba(255, 181, 36, 0.7));
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 48px;
+    height: 48px;
+    border-radius: 48px;
+    border: 1px solid var(--bs-white);
+    background: var(--bs-primary);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-control-next {
+    margin-right: 20px;
+}
+
+.carousel-control-prev {
+    margin-left: 20px;
+}
+
+.page-header {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/cart-page-header-img.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (min-width: 992px) {
+    .hero-header,
+    .page-header {
+        margin-top: 110px !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-header,
+    .page-header {
+        margin-top: 97px !important;
+    }
+}
+/*** Hero Header end ***/
+
+
+/*** featurs Start ***/
+.featurs .featurs-item .featurs-icon {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+.featurs .featurs-item .featurs-icon::after {
+    content: "";
+    width: 35px;
+    height: 35px;
+    background: var(--bs-secondary);
+    position: absolute;
+    bottom: -10px;
+    transform: translate(-50%);
+    transform: rotate(45deg);
+    background: var(--bs-secondary);
+    
+}
+/*** featurs End ***/
+
+
+/*** service Start ***/
+.service .service-content {
+    position: relative;
+    width: 250px; 
+    height: 130px; 
+    top: -50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+/*** service End ***/
+
+
+/*** Fruits Start ***/
+.fruite .tab-class .nav-item a.active {
+    background: var(--bs-secondary) !important;
+}
+
+.fruite .tab-class .nav-item a.active span {
+    color: var(--bs-white) !important; 
+}
+
+.fruite .fruite-categorie .fruite-name {
+    line-height: 40px;
+}
+
+.fruite .fruite-categorie .fruite-name a {
+    transition: 0.5s;
+}
+
+.fruite .fruite-categorie .fruite-name a:hover {
+    color: var(--bs-secondary);
+}
+
+.fruite .fruite-item {
+    height: 100%;
+    transition: 0.5s;
+}
+.fruite .fruite-item:hover {
+    box-shadow: 0 0 55px rgba(0, 0, 0, 0.4);
+}
+
+.fruite .fruite-item .fruite-img {
+    overflow: hidden;
+    transition: 0.5s;
+    border-radius: 10px 10px 0 0;
+}
+
+.fruite .fruite-item .fruite-img img {
+    transition: 0.5s;
+}
+
+.fruite .fruite-item .fruite-img img:hover {
+    transform: scale(1.3);
+}
+/*** Fruits End ***/
+
+
+/* General Carousel Styling (Default for larger screens) */
+.vesitable {
+    background-color: #f8f9fa; /* Light background for the section */
+    padding: 20px 0 10px 0;
+}
+
+.vesitable .container {
+    max-width: 1200px; /* Limit container width for better readability */
+}
+
+/* Heading Styling */
+.vesitable h1 {
+    font-size: 3rem; /* Adjust heading size */
+    color: #333; /* Darker color for heading */
+}
+
+.vesitable h1 span {
+    font-weight: normal;
+}
+
+/* Client Item Styling (Default for larger screens - smaller) */
+.vesitable .client-item {
+    padding: 15px; /* Reduced padding for desktop */
+    margin: 5px; /* Add some margin between items */
+    /* background-color: #fff;  */
+    border-radius: 8px;
+    /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);  */
+    transition: transform 0.3s ease-in-out;
+    display: flex; /* Use flexbox for alignment within item */
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    min-height: 150px; /* Default minimum height for larger screens */
+}
+
+.vesitable .client-item:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.vesitable .client-item img {
+    max-width: 80%; /* Ensure images are responsive within their containers */
+    height: auto;
+    max-height: 80px; /* Max height for images on larger screens */
+    margin-bottom: 10px; /* Reduced space between image and text */
+    object-fit: contain; /* Ensure images fit without cropping or distortion */
+}
+
+.vesitable .client-item h6 {
+    font-size: 0.95rem; /* Slightly smaller font size for desktop text */
+    color: #555;
+    margin-bottom: 0; /* Remove default margin */
+    text-align: center;
+}
+
+/* Owl Carousel Navigation (Buttons) */
+.owl-carousel .owl-nav {
+    margin-top: 0px; /* Space from carousel items */
+    text-align: center; /* Center the navigation buttons */
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.owl-carousel .owl-nav .owl-prev,
+.owl-carousel .owl-nav .owl-next {
+    position: static;
+    display: inline-block;
+    margin: 0 8px;
+    color: var(--bs-primary, #007bff);
+    padding: 8px 18px;
+    border: 1px solid var(--bs-secondary, #6c757d);
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.owl-carousel .owl-nav .owl-prev:hover,
+.owl-carousel .owl-nav .owl-next:hover {
+    background: var(--bs-secondary, #6c757d);
+    color: var(--bs-white, #fff);
+    border-color: var(--bs-secondary, #6c757d);
+}
+
+/* Owl Dots (Pagination) - Hidden to remove indicators */
+.owl-carousel .owl-dots {
+    display: none;
+}
+
+
+
+/* Mobile-first approach: Styles for smaller screens */
+
+/* Adjustments for screens up to 768px wide (Tablets in portrait, larger phones) */
+@media (max-width: 768px) {
+    .vesitable h1 {
+        font-size: 2.5rem; /* Slightly larger heading on mobile */
+    }
+
+    .vesitable .client-item {
+        padding: 25px; /* Increased padding for bigger items */
+        margin: 10px; /* Keep margin */
+        min-height: 220px; /* **Significantly increased height for mobile** */
+    }
+
+    .vesitable .client-item img {
+        max-width: 90%; /* Allow images to be larger */
+        max-height: 100px; /* **Increased max height for images on mobile** */
+        margin-bottom: 15px; /* More space below image */
+    }
+
+    .vesitable .client-item h6 {
+        font-size: 1.1rem; /* Larger font size for better readability on mobile */
+    }
+
+    .owl-carousel .owl-nav .owl-prev,
+    .owl-carousel .owl-nav .owl-next {
+        padding: 10px 22px; /* Bigger buttons for easier tapping */
+        font-size: 1.2rem; /* Larger arrow icons */
+    }
+}
+
+/* Adjustments for screens up to 576px wide (Standard phones) */
+@media (max-width: 576px) {
+    .vesitable h1 {
+        font-size: 2rem; /* Adjusted heading for smaller phones */
+        margin-bottom: 40px; /* More space below heading */
+    }
+
+    .vesitable .client-item {
+        padding: 20px; /* Adjusted padding for very small screens */
+        margin: 10px auto; /* Center items if they take full width */
+        min-height: 180px; /* **Adjusted minimum height for very small screens** */
+        max-width: 90%; /* Control item width on very small screens if Owl Carousel shows 1 item */
+    }
+
+    .vesitable .client-item img {
+        max-height: 90px; /* **Adjusted max height for images on very small screens** */
+        margin-bottom: 12px;
+    }
+
+    .vesitable .client-item h6 {
+        font-size: 1rem; /* Adjusted font size for very small screens */
+    }
+
+    .owl-carousel .owl-nav {
+        margin-top: 20px; /* Adjusted button margin */
+    }
+
+    .owl-carousel .owl-nav .owl-prev,
+    .owl-carousel .owl-nav .owl-next {
+        padding: 8px 18px; /* Adjusted button size for very small screens */
+        font-size: 1.1rem;
+    }
+}
+
+
+/*** Banner Section Start ***/
+.banner .banner-btn:hover {
+    background: var(--bs-primary);
+}
+/*** Banner Section End ***/
+
+
+/*** Facts Start ***/
+.counter {
+    height: 100%;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+}
+
+.counter i {
+    font-size: 60px;
+    margin-bottom: 25px;
+}
+
+.counter h4 {
+    color: var(--bs-primary);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.counter h1 {
+    margin-bottom: 0;
+}
+.counter {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.counter h4 {
+    transition: color 0.3s ease;
+}
+
+.counter:hover {
+    border-color: rgb(255, 181, 36);
+    box-shadow: 0 0 1px rgba(255, 181, 36, 0.5);
+}
+
+.counter img {
+    /* Remove filter transition to prevent flicker */
+    transition: none;
+}
+
+.counter:hover img {
+    filter: brightness(0) saturate(100%) invert(71%) sepia(67%) saturate(681%) hue-rotate(356deg) brightness(101%) contrast(96%);
+    /* No transition here either */
+    transition: none;
+}
+
+.counter:hover h4 {
+    color: rgb(255, 181, 36);
+}
+
+
+
+/*** Facts End ***/
+
+
+/*** testimonial Start ***/
+.testimonial .owl-nav .owl-prev {
+    position: absolute;
+    top: -58px;
+    right: 0;
+    color: var(--bs-primary);
+    padding: 5px 25px;
+    border: 1px solid var(--bs-secondary);
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.testimonial .owl-nav .owl-prev:hover {
+    background: var(--bs-secondary);
+    color: var(--bs-white);
+}
+
+.testimonial .owl-nav .owl-next {
+    position: absolute;
+    top: -58px;
+    right: 88px;
+    color: var(--bs-primary);
+    padding: 5px 25px;
+    border: 1px solid var(--bs-secondary);
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.testimonial .owl-nav .owl-next:hover {
+    background: var(--bs-secondary);
+    color: var(--bs-white);
+}
+/*** testimonial End ***/
+
+
+/*** Single Page Start ***/
+.pagination {
+    display: inline-block;
+}
+  
+.pagination a {
+    color: var(--bs-dark);
+    padding: 10px 16px;
+    text-decoration: none;
+    transition: 0.5s;
+    border: 1px solid var(--bs-secondary);
+    margin: 0 4px;
+}
+  
+.pagination a.active {
+    background-color: var(--bs-primary);
+    color: var(--bs-light);
+    border: 1px solid var(--bs-secondary);
+}
+  
+.pagination a:hover:not(.active) {background-color: var(--bs-primary)}
+
+.nav.nav-tabs .nav-link.active {
+    border-bottom: 2px solid var(--bs-secondary) !important;
+}
+/*** Single Page End ***/
+
+
+/*** Footer Start ***/
+.footer .footer-item .btn-link {
+    line-height: 35px;
+    color: rgba(255, 255, 255, .5);
+    transition: 0.5s;
+}
+
+.footer .footer-item .btn-link:hover {
+    color: var(--bs-secondary) !important;
+}
+
+.footer .footer-item p.mb-4 {
+    line-height: 35px;
+}
+
+.hover:hover{color:var(--bs-secondary);}
+.h5:hover{color:var(--bs-secondary);font-weight:bold;}
+
+
+.fixed-icon1 {
+    position: fixed; 
+    top: 30%;
+    right: 2px;
+    background-color:var(--bs-secondary) ;
+    color: white;
+    font-weight: bold; 
+    padding: 10px; 
+    border-radius: 20px; /* Makes the icon round */
+    text-align: center;
+    font-size: 16px; /* Adjust font size as needed */
+    text-decoration: none; /* Removes underline from the link */
+    z-index: 999; /* Ensures the icon stays above other elements */
+    writing-mode: vertical-lr; /* Sets the writing mode to vertical */
+    line-height: 1; /* Ensures the icon height adjusts properly */
+}
+.fixed-icon1:hover{
+    background-color: #fff;
+    color: var(--bs-secondary);
+    font-weight: bold; 
+    outline: 2px solid var(--bs-secondary);
+}
+.fixed-icon2 {
+    position: fixed; 
+    top: 72%;
+    right: 30px;
+    background-color:var(--bs-secondary);
+    color: white;
+    font-weight: bold; 
+    padding: 10px; 
+    border-radius: 25px; /* Makes the icon round */
+    text-align: center;
+    font-size: 16px; /* Adjust font size as needed */
+    text-decoration: none; /* Removes underline from the link */
+    z-index: 999; /* Ensures the icon stays above other elements */
+    writing-mode: vertical-lr; /* Sets the writing mode to vertical */
+    line-height: 1; /* Ensures the icon height adjusts properly */
+}
+.fixed-icon2:hover{
+    background-color: #fff;
+    color: var(--bs-secondary);
+    outline: 2px solid var(--bs-secondary);;
+    font-weight: bold; 
+}
+.fixed-icon3 {
+    position: fixed; 
+    top: 81%;
+    right: 30px;
+    background-color:var(--bs-secondary);
+    color: white;
+    font-weight: bold; 
+    padding:10px; 
+    border-radius: 25px; /* Makes the icon round */
+    text-align: center;
+    font-size: 16px; /* Adjust font size as needed */
+    text-decoration: none; /* Removes underline from the link */
+    z-index: 999; /* Ensures the icon stays above other elements */
+    writing-mode: vertical-lr; /* Sets the writing mode to vertical */
+    line-height: 1; /* Ensures the icon height adjusts properly */
+}
+.fixed-icon3:hover{
+    background-color: #fff;
+    color: var(--bs-secondary);
+    font-weight: bold; 
+    outline: 2px solid var(--bs-secondary);
+}
+
+.scheduleBtn {
+    background-color:var(--bs-secondary);
+    color: #fff;
+}
+.scheduleBtn:hover{
+    background-color: #fff;
+    color: var(--bs-secondary);
+    font-weight: bold; 
+    outline: 2px solid var(--bs-secondary);
+}
+
+
+
+
+.services-details-info {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 70px;
+}
+
+
+.services-details-info h3 {
+    background-color: #f7630c;
+    color: #fff;
+    padding: 15px;
+    margin: 0;
+    font-size: 16px;
+
+}
+
+.services-list {
+    padding-left: 0;
+    list-style-type: none;
+    background-color: #fff;
+    box-shadow: 0 5px 40px 10px #eaeaef;
+    margin: 0;
+    border-top: 1px solid #eaeaef;
+
+}
+
+.services-list li {
+    border-bottom: 1px solid #eaeaef;
+}
+
+.services-list li a {
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown-toggle:hover,
+.dropdown-toggle.active {
+    background-color: #f7a501;
+    border-radius: 5px;
+}
+.content {
+    display: none;
+}
+#div1 {
+    display: block; /* Display div1 by default */
+}
+.history-head h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.history-box {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.history-paragraph p {
+    font-size: 1.15rem;
+    color: #555;
+}
+
+.list-styl {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-styl li {
+    background: #f9f9f9;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    color: #333;
+    transition: background 0.3s ease, transform 0.3s ease;
+    position: relative;
+    padding-left: 35px;
+}
+
+.list-styl li:before {
+    content: '\2713'; /* Checkmark */
+    color: #373e7b; /* Green */
+    font-size: 1.3rem;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.list-styl li:hover {
+    background: #f1f1f1;
+    transform: scale(1.02);
+}
+
+.history-media img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 20px; /* Space above the image */
+}
+
+.history-media img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .history-box {
+        padding: 20px;
+    }
+    .list-styl li {
+        font-size: 1rem; /* Slightly smaller font size on smaller screens */
+        padding-left: 30px;
+    }
+}
+
+
+
+
+.list-group-item {
+    padding: 10px 15px; /* Adjust padding to make the items smaller */
+    font-size: 14px; /* Adjust font size if needed */
+}
+.list-group-item a {
+    text-decoration: none;
+    color: #007bff;
+}
+/* Submenu Styles */
+.submenu {
+    padding-left: 20px;
+    display: none;
+}
+
+.submenu li {
+    padding: 5px;
+    font-size: 0.8rem;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    transition: background-color 0.3s ease;
+    position: relative;
+    padding-left: 20px;
+}
+
+.submenu li:before {
+    content: '\27A3'; /* Unicode for star */
+    color: #0a0a0a; /* Color for the star */
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.submenu li:hover,
+.submenu li a.active {
+    border-radius: 5px;
+    background-color: #d6cbcb;
+}
+
+.submenu a {
+    text-decoration: none;
+    color: #555;
+}
+
+.submenu a:hover {
+    color: #070707;
+}
+
+/* For showing and hiding the submenu */
+.submenu.show {
+    display: block;
+}
+
+.icon-item {
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.icon-item:hover {
+    border-color: rgb(255, 181, 36);
+    box-shadow: 0 0 20px rgba(255, 181, 36, 0.5);
+}
+
+.icon-item:hover h6 {
+    color: rgb(255, 181, 36) !important;
+    transition: color 0.3s ease;
+}
+.icon-item:hover .icons img {
+    filter: brightness(0) saturate(100%) invert(71%) sepia(67%) saturate(681%) hue-rotate(356deg) brightness(101%) contrast(96%);
+    transition: none; /* disable smooth transition */
+}
+.icon-item .icons img {
+    transition: none; /* also disable transition when reverting */
+}
+
+
+
+
+/*** Footer End ***/
+
+/* custom form css */
+
+/* General Form Styling */
+.contact-form-container {
+    background-color: #f8f8f8; /* Light white background */
+    padding: 2rem; /* Add some padding around the form */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.contact-form-container .text-center h2 {
+    color: #333; /* Darker text for the heading */
+    margin-bottom: 1.5rem;
+}
+
+/* Input Field Styling */
+.contact-form-container .form-control {
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 4px; /* Slightly rounded input fields */
+    padding: 0.75rem 1rem; /* Adjust padding */
+    margin-bottom: 1rem; /* Spacing between inputs */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover/focus */
+}
+
+.contact-form-container .form-control:focus {
+    outline: 2px solid #FFB524; /* Outline on focus */
+    border-color: #FFB524; /* Border color on focus */
+    box-shadow: 0 0 0 0.2rem rgba(255, 181, 36, 0.25); /* Subtle shadow on focus */
+}
+
+/* Select Box Styling */
+.contact-form-container select.form-control {
+    appearance: none; /* Remove default select arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%204%205%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M2%200L0%202h4zm0%205L0%203h4z%22%2F%3E%3C%2Fsvg%3E'); /* Custom arrow */
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 8px 10px;
+}
+
+/* Button Styling */
+.contact-form-container .btn-submit {
+    background-color: #FFB524; /* Primary button color */
+    color: #fff; /* White text on button */
+    border: 1px solid #FFB524; /* Border matches background */
+    padding: 0.75rem 1.5rem; /* Button padding */
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.contact-form-container .btn-submit:hover {
+    background-color: #e0a320; /* Slightly darker shade on hover */
+    border-color: #e0a320;
+}
+
+/* NAvbar Scrool Effect */
+/* --- Global Navbar Styling --- */
+.fixed-top {
+    transition: all 0.3s ease-in-out; /* Smooth transitions */
+    background-color: #fff; /* Ensure white background for initial state */
+    padding-top: 8px; /* Initial vertical padding - makes it narrower */
+    padding-bottom: 8px;
+    /* Optional: box-shadow for a subtle lift */
+    box-shadow: 0 2px 4px rgba(0,0,0,.05);
+}
+
+/* --- Scrolled Navbar State --- */
+.fixed-top.scrolled {
+    padding-top: 4px; /* Even less vertical padding when scrolled - making it super narrow */
+    padding-bottom: 4px;
+    background-color: #fff; /* Slightly transparent white */
+    box-shadow: 0 4px 8px rgba(0,0,0,.1); /* Stronger shadow on scroll */
+}
+
+/* --- Navbar Brand/Logo Styling --- */
+/*** Navbar Start ***/
+
+/* --- Global Navbar Container Styles --- */
+/* Targets the outermost fixed-top container */
+.fixed-top {
+    transition: all 0.3s ease-in-out; /* Smooth transitions for all properties */
+    background-color: #fff; /* Ensure initial white background */
+    padding-top: 8px; /* Initial vertical padding for a narrow start */
+    padding-bottom: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.05); /* Subtle initial shadow */
+    border-bottom: 1px solid rgba(255, 255, 255, .1); /* Your existing border-bottom */
+}
+
+/* --- Scrolled Navbar State --- */
+.fixed-top.scrolled {
+    padding-top: 4px; /* Even less vertical padding when scrolled - super narrow */
+    padding-bottom: 4px;
+    background-color: #fff; /* Slightly transparent white on scroll */
+    box-shadow: 0 4px 8px rgba(0,0,0,.1); /* Stronger shadow on scroll */
+    border-bottom: none; /* Remove border-bottom when scrolled for a cleaner look */
+}
+
+/* --- Navbar Brand/Logo Styling --- */
+/* Your image is inside an <a> with class navbar-brand. Target the img. */
+.navbar-brand img {
+    height: 50px; /* Initial smaller height for the logo */
+    width: auto; /* Maintain aspect ratio */
+    transition: all 0.3s ease-in-out;
+    /* Ensure image is treated as a block element for consistent vertical alignment */
+    display: block;
+}
+
+.fixed-top.scrolled .navbar-brand img {
+    height: 35px; /* Even smaller logo when scrolled */
+}
+
+/* --- Navigation Links Styling --- */
+.navbar .navbar-nav .nav-link {
+    font-size: 0.9rem; /* Initial smaller font size for links (approx 14.4px) */
+    padding: 6px 15px; /* Initial smaller vertical padding for links */
+    transition: .3s; /* Adjusted from .5s to match general transition or keep .5s if desired */
+    color: #333; /* Default link color (adjust as per your theme) */
+}
+
+.fixed-top.scrolled .navbar-nav .nav-link {
+    font-size: 0.85rem; /* Even smaller font size when scrolled (approx 13.6px) */
+    padding: 4px 15px; /* Even less vertical padding for links */
+}
+
+/* --- Schedule Button Styling --- */
+.scheduleBtn {
+    font-size: 0.9rem; /* Initial smaller font size for the button */
+    padding: 7px 15px; /* Initial smaller vertical padding for the button */
+    transition: all 0.3s ease-in-out;
+}
+
+.fixed-top.scrolled .scheduleBtn {
+    font-size: 0.85rem; /* Even smaller font size for the button when scrolled */
+    padding: 5px 12px; /* Even less vertical padding for the button */
+}
+
+/* --- Your Original Overrides / Enhancements --- */
+
+/* Removed fixed height from .navbar as it's now controlled by .fixed-top padding */
+/* .navbar { height: 70px; } */
+
+/* Border-bottom logic moved to .fixed-top and .fixed-top.scrolled */
+/* .navbar { border-bottom: 1px solid rgba(255, 255, 255, .1); } */
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active,
+/* Ensure active/hover states work for links within scrolled navbar too */
+.fixed-top.scrolled .navbar-nav .nav-link:hover,
+.fixed-top.scrolled .navbar-nav .nav-link.active {
+    color: var(--bs-primary); /* Uses your Bootstrap primary color variable */
+}
+
+.navbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107"; /* Font Awesome down arrow */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+/* Dropdown menu animations for larger screens */
+@media (min-width: 1200px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        visibility: hidden;
+        top: 100%; /* Position below the navbar */
+        transform: rotateX(-75deg); /* Initial state for animation */
+        transform-origin: 0% 0%;
+        border: 0;
+        transition: .5s;
+        opacity: 0;
+    }
+}
+
+.dropdown .dropdown-menu a:hover {
+    background: var(--bs-secondary);
+    color: var(--bs-primary);
+}
+
+.navbar .nav-item:hover .dropdown-menu {
+    transform: rotateX(0deg); /* Final state for animation */
+    visibility: visible;
+    background: var(--bs-light) !important; /* Ensure background is light */
+    border-radius: 10px !important; /* Rounded corners */
+    transition: .5s;
+    opacity: 1;
+}
+
+/* Search Modal Styling (unchanged) */
+#searchModal .modal-content {
+    background: rgba(255, 255, 255, .8);
+}
+
+/* Optional: Toggler Button adjustment for very narrow navbars on mobile */
+/* If the toggler looks off-center or too large, you might need to adjust its padding/font-size */
+.navbar-toggler {
+    padding: .2rem .5rem; /* Make toggler padding a bit smaller to fit narrow bar */
+    font-size: 0.8rem; /* Make toggler icon a bit smaller if needed */
+}
+
+/*** Navbar End ***/
+
+/* Contact form */
+ .form-control:focus {
+    border-color: #FFB524;
+    box-shadow: 0 0 0 0.15rem #ffb624ec; /* custom glow */
+    outline: none;
+  }
+
+  /* mobile */
+
+
+  /* ERP MODULES */
+  
+  .hover-card {
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  background-color: #f8f9fa; /* same as bg-light */
+  border-radius: 0.25rem; /* keep rounded consistent */
+}
+
+
+
+.hover-card img {
+  transition: none; /* disable filter transition to prevent flicker */
+}
+
+.hover-card:hover img {
+  filter: brightness(0) saturate(100%) invert(71%) sepia(67%) saturate(681%) hue-rotate(356deg) brightness(101%) contrast(96%);
+  transition: none; /* keep instant filter change */
+}
+/* .hover-card:hover a {
+    color: #FFB524;
+} */
+
+
+

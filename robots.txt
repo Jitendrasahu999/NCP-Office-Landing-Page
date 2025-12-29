@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /testform.html
+
+Sitemap: http://schoolerp.nascorptechnologies.com/sitemap.xml
