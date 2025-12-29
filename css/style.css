@@ -581,7 +581,7 @@ Navbar End ** */
 }
 
 .counter:hover {
-    border-color: rgb(255, 181, 36);
+    border-color: #008E74;
     box-shadow: 0 0 1px rgba(255, 181, 36, 0.5);
 }
 
@@ -597,7 +597,7 @@ Navbar End ** */
 }
 
 .counter:hover h4 {
-    color: rgb(255, 181, 36);
+    color: #008E74;
 }
 
 
@@ -776,7 +776,7 @@ Navbar End ** */
 
 
 .services-details-info h3 {
-    background-color: #f7630c;
+    background-color: #008E74;
     color: #fff;
     padding: 15px;
     margin: 0;
@@ -808,7 +808,7 @@ Navbar End ** */
 
 .dropdown-toggle:hover,
 .dropdown-toggle.active {
-    background-color: #f7a501;
+    background-color: #008E74;
     border-radius: 5px;
 }
 .content {
@@ -960,12 +960,12 @@ Navbar End ** */
 }
 
 .icon-item:hover {
-    border-color: rgb(255, 181, 36);
+    border-color: #008E74;
     box-shadow: 0 0 20px rgba(255, 181, 36, 0.5);
 }
 
 .icon-item:hover h6 {
-    color: rgb(255, 181, 36) !important;
+    color: #008E74 !important;
     transition: color 0.3s ease;
 }
 .icon-item:hover .icons img {
@@ -1006,8 +1006,8 @@ Navbar End ** */
 }
 
 .contact-form-container .form-control:focus {
-    outline: 2px solid #FFB524; /* Outline on focus */
-    border-color: #FFB524; /* Border color on focus */
+    outline: 2px solid #008E74; /* Outline on focus */
+    border-color: #008E74; /* Border color on focus */
     box-shadow: 0 0 0 0.2rem rgba(255, 181, 36, 0.25); /* Subtle shadow on focus */
 }
 
@@ -1024,9 +1024,9 @@ Navbar End ** */
 
 /* Button Styling */
 .contact-form-container .btn-submit {
-    background-color: #FFB524; /* Primary button color */
+    background-color: #008E74; /* Primary button color */
     color: #fff; /* White text on button */
-    border: 1px solid #FFB524; /* Border matches background */
+    border: 1px solid #008E74; /* Border matches background */
     padding: 0.75rem 1.5rem; /* Button padding */
     border-radius: 4px;
     cursor: pointer;
@@ -1035,8 +1035,8 @@ Navbar End ** */
 }
 
 .contact-form-container .btn-submit:hover {
-    background-color: #e0a320; /* Slightly darker shade on hover */
-    border-color: #e0a320;
+    background-color: #008E74; /* Slightly darker shade on hover */
+    border-color: #008E74;
 }
 
 /* NAvbar Scrool Effect */
@@ -1189,8 +1189,8 @@ Navbar End ** */
 
 /* Contact form */
  .form-control:focus {
-    border-color: #FFB524;
-    box-shadow: 0 0 0 0.15rem #ffb624ec; /* custom glow */
+    border-color: #008E74;
+    box-shadow: 0 0 0 0.15rem #008E74; 
     outline: none;
   }
 
@@ -1203,22 +1203,22 @@ Navbar End ** */
   border: 2px solid transparent;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-  background-color: #f8f9fa; /* same as bg-light */
-  border-radius: 0.25rem; /* keep rounded consistent */
+  background-color: #f8f9fa; 
+  border-radius: 0.25rem; 
 }
 
 
 
 .hover-card img {
-  transition: none; /* disable filter transition to prevent flicker */
+  transition: none; 
 }
 
 .hover-card:hover img {
   filter: brightness(0) saturate(100%) invert(71%) sepia(67%) saturate(681%) hue-rotate(356deg) brightness(101%) contrast(96%);
-  transition: none; /* keep instant filter change */
+  transition: none;
 }
 /* .hover-card:hover a {
-    color: #FFB524;
+    color: #008E74;
 } */
 
 
