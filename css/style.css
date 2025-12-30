@@ -229,7 +229,7 @@ Navbar End ** */
 
 
 .hero-header1 {
-    background: linear-gradient(rgba(248, 223, 173, 0.1), rgba(248, 223, 173, 0.1)), url(../img/backgroundimage/nascorp-school-management-software-and-mobile-app.jpg);
+    background: linear-gradient(rgba(248, 223, 173, 0.1), rgba(248, 223, 173, 0.1)), url(../img/backgroundimage/6.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -426,7 +426,7 @@ Navbar End ** */
 .vesitable .client-item img {
     max-width: 80%; /* Ensure images are responsive within their containers */
     height: auto;
-    max-height: 80px; /* Max height for images on larger screens */
+    max-height: 100px; /* Max height for images on larger screens */
     margin-bottom: 10px; /* Reduced space between image and text */
     object-fit: contain; /* Ensure images fit without cropping or distortion */
 }
@@ -953,10 +953,12 @@ Navbar End ** */
 
 .icon-item {
     transition: all 0.3s ease;
-    border: 2px solid transparent;
+    border: 2px solid #fff;
     border-radius: 12px;
-    padding: 20px;
+    padding: 20px 10px;
     cursor: pointer;
+    border: 1px solid #fff;
+   
 }
 
 .icon-item:hover {
