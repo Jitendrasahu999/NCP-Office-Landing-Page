@@ -958,7 +958,10 @@ Navbar End ** */
     padding: 20px 10px;
     cursor: pointer;
     border: 1px solid #fff;
-   
+    min-height: 180px;   /* adjust if needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .icon-item:hover {
@@ -973,11 +976,29 @@ Navbar End ** */
 .icon-item:hover .icons img {
     filter: brightness(0) saturate(100%) invert(71%) sepia(67%) saturate(681%) hue-rotate(356deg) brightness(101%) contrast(96%);
     transition: none; /* disable smooth transition */
+
 }
 .icon-item .icons img {
     transition: none; /* also disable transition when reverting */
 }
+.icons {
+    height: 80px;              /* equal icon space */
+}
 
+.icons img {
+    max-width: 60px;
+    height: auto;
+}
+
+.app-icon {
+  max-width: 90px;
+}
+
+@media (max-width: 576px) {
+  .app-icon {
+    max-width: 60px;
+  }
+}
 
 
 
