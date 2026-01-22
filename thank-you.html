@@ -4,146 +4,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Thank You | Nascorp School ERP</title>
 
-    <!-- SEO Meta Tags -->
-    <meta name="description"
-        content="Thank you for contacting Nascorp Technologies. Your submission has been received. We will get back to you shortly.">
     <meta name="robots" content="noindex, follow">
-    <meta name="author" content="info@nascorptechnologies.com">
-    <meta name="reply-to" content="info@nascorptechnologies.com">
-    <link rel="canonical" href="https://schoolerp.nascorptechnologies.com/thank-you.html">
+    <link rel="canonical" href="https://www.schoolerp.nascorptechnologies.com/thank-you.html">
 
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Thank You | Nascorp Technologies">
-    <meta property="og:description"
-        content="We appreciate your interest in Nascorp Technologies. We'll be in touch soon.">
-    <meta property="og:image" content="https://schoolerp.nascorptechnologies.com/img/logo-white.png">
-    <meta property="og:url" content="https://schoolerp.nascorptechnologies.com/thank-you.html">
-    <meta property="og:type" content="website">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Thank You | Nascorp Technologies">
-    <meta name="twitter:description"
-        content="Thank you for contacting Nascorp Technologies. We will get back to you soon.">
-    <meta name="twitter:image" content="https://schoolerp.nascorptechnologies.com/img/logo-white.png">
-
-    <!-- Favicon -->
-    <link rel="icon" href="https://schoolerp.nascorptechnologies.com/img/logo-white.png" type="image/png">
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        crossorigin="anonymous">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-
-    <!-- Preload Important Images -->
-    <link rel="preload" as="image" href="https://schoolerp.nascorptechnologies.com/img/logo-white.png">
-
-    <!-- Structured Data (JSON-LD) -->
-    <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "Organization",
-      "name": "Nascorp Technologies",
-      "url": "https://www.schoolerp.nascorptechnologies.com",
-      "logo": "https://schoolerp.nascorptechnologies.com/img/logo-white.png",
-      "contactPoint": [{
-        "@type": "ContactPoint",
-        "telephone": "+91 9212871807",
-        "contactType": "Customer Service"
-      }],
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "509, Tower A1, Ansal Corporate Park, Sector 142",
-        "addressLocality": "Noida",
-        "addressRegion": "Uttar Pradesh",
-        "postalCode": "201305",
-        "addressCountry": "IN"
-      }
-    }
-    </script>
-
-    <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-MFS894R3');</script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <style>
+        :root {
+            --theme-color: #008E74;
+            --dark-text: #333333;
+        }
+
         body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f8f9fa;
-            /* Light gray background */
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f4f7f6;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            /* Full viewport height */
             margin: 0;
+            padding: 20px; /* Added padding for mobile edges */
         }
 
         .thank-you-card {
             background-color: #ffffff;
             border-radius: 15px;
-            /* Rounded corners */
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 142, 116, 0.1);
+            padding: 40px 20px; /* Adjusted for mobile */
             text-align: center;
             max-width: 500px;
-            width: 90%;
-            /* Responsive width */
+            width: 100%; /* Full width on mobile */
+            border-bottom: 6px solid var(--theme-color);
         }
 
         .thank-you-icon {
-            font-size: 4rem;
-            color: #28a745;
-            /* Bootstrap success green */
-            margin-bottom: 20px;
-        }
-
-        .thank-you-card h1 {
-            color: #343a40;
-            /* Dark text */
-            font-weight: 700;
+            font-size: clamp(3.5rem, 10vw, 5rem); /* Responsive icon size */
+            color: var(--theme-color);
             margin-bottom: 15px;
         }
 
-        .thank-you-card p {
-            color: #6c757d;
-            /* Muted text */
-            font-size: 1.1rem;
-            line-height: 1.6;
-            margin-bottom: 30px;
+        h1 {
+            font-family: 'Raleway', sans-serif;
+            color: var(--dark-text);
+            font-weight: 800;
+            font-size: clamp(1.8rem, 6vw, 2.5rem); /* Responsive font size */
+            margin-bottom: 15px;
         }
 
-        .btn-custom {
-            background-color: #007bff;
-            /* Bootstrap primary blue */
-            border-color: #007bff;
-            color: white;
-            padding: 12px 25px;
-            border-radius: 8px;
+        p {
+            color: #666;
+            font-size: clamp(1rem, 4vw, 1.1rem);
+            line-height: 1.5;
+            margin-bottom: 25px;
+        }
+
+        /* Mobile First Buttons */
+        .btn-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            width: 100%;
+        }
+
+        .btn-theme, .btn-theme-outline {
+            width: 100%;
+            padding: 14px 20px;
+            border-radius: 50px;
             font-weight: 600;
-            transition: background-color 0.3s ease, border-color 0.3s ease;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: block;
+            box-sizing: border-box;
+            font-size: 1rem;
         }
 
-        .btn-custom:hover {
-            background-color: #0056b3;
-            border-color: #0056b3;
+        .btn-theme {
+            background-color: var(--theme-color);
             color: white;
-            /* Ensure text remains white on hover */
+            border: 2px solid var(--theme-color);
+        }
+
+        .btn-theme-outline {
+            background-color: transparent;
+            color: var(--theme-color);
+            border: 2px solid var(--theme-color);
+        }
+
+        .btn-theme:hover {
+            background-color: #007661;
+            border-color: #007661;
+            color: white;
+        }
+
+        .contact-row {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap; /* Wraps on very small screens */
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .contact-link {
+            color: var(--theme-color);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        @media (min-width: 576px) {
+            .thank-you-card {
+                padding: 50px 40px;
+            }
         }
     </style>
 </head>
@@ -151,21 +129,28 @@
 <body>
     <div class="thank-you-card">
         <div class="thank-you-icon">
-            <i class="fas fa-check-circle"></i> <!-- Checkmark icon -->
+            <i class="fas fa-check-circle"></i>
         </div>
         <h1>Thank You!</h1>
-        <p>Your submission has been successfully received. We appreciate your time and effort.</p>
-        <p>If you have any further questions, feel free to contact us.</p>
-        <a href="https://schoolerp.nascorptechnologies.com/" class="btn btn-custom">Back to Home</a>
-        <p class="mt-4">Want to learn more?</p>
-        <a href="https://www.nascorptechnologies.com" class="btn btn-outline-primary">Visit Our Main Website</a>
-
+        <p>Your submission has been received. Our team will contact you shortly to help streamline your school management.</p>
+        
+        <div class="btn-stack">
+            <a href="https://www.schoolerp.nascorptechnologies.com/" class="btn-theme">Back to ERP Home</a>
+            <a href="https://www.nascorptechnologies.com" target="_blank" class="btn-theme-outline">Visit Our Main Website</a>
+        </div>
+        
+        <div class="mt-4 pt-4 border-top">
+            <p class="small mb-3 text-muted fw-bold">Contact us directly:</p>
+            <div class="contact-row">
+                <a href="https://wa.me/919212871807" class="contact-link">
+                    <i class="fab fa-whatsapp fa-lg" style="color: #25D366;"></i> WhatsApp
+                </a>
+                <a href="tel:+919212871807" class="contact-link">
+                    <i class="fa fa-phone fa-lg"></i> Call Now
+                </a>
+            </div>
+        </div>
     </div>
-
-    <!-- Bootstrap JS CDN (optional, for components like carousels, modals, etc.) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>

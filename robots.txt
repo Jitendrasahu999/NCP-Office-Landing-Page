@@ -1,4 +1,17 @@
+# Allow all search engines and social bots to crawl the site
 User-agent: *
-Disallow: /testform.html
+Allow: /
+Allow: /img/
 
-Sitemap: http://schoolerp.nascorptechnologies.com/sitemap.xml
+# Specifically ensure social media bots can see your images for link previews
+User-agent: facebookexternalhit
+Allow: /img/
+
+User-agent: LinkedInBot
+Allow: /img/
+
+User-agent: Twitterbot
+Allow: /img/
+
+# Tell search engines where your sitemap is (Update if you have one)
+Sitemap: https://www.schoolerp.nascorptechnologies.com/sitemap.xml
